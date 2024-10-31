@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  recommendation-sys:
+    image: rambo935487/recommendation-sys:v0.0.1
+    ports:
+      - "8080:80"  # Adjust the port mapping as needed
+    environment:
+      - DATABASE_URL=your_database_url
+      - OTHER_ENV_VARIABLE=other_value
+    # Add other configurations or volumes if necessary
